@@ -1,0 +1,602 @@
+/* CSS Here*/
+
+
+/* html class*/
+
+p {
+    color: black;
+    line-height: 100px;
+    font-size: 40px;
+    text-align: center;
+    margin: 1px;
+    font-weight: bold;
+}
+
+body {
+    border-top: 3px solid #333;
+    margin: 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*container main page element*/
+
+#siteContainer {
+    margin: 0 auto;
+    /* center container */
+    width: 1520px;
+}
+
+#mainHeader {
+    margin-top: 0px;
+    padding-bottom: 10px;
+    height: 100px;
+    /* hard coded height*/
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    border: 1px solid red;
+}
+
+#logo {
+    width: 210px;
+    height: 160px;
+    margin-left: -1px;
+    margin-top: -1px;
+    background-color: yellow;
+    border: 3px solid black;
+}
+
+#mainNav {
+    display: flex;
+    flex-direction: column;
+    width: 1300px;
+    padding-bottom: 109px;
+    margin-left: -1px;
+    margin-top: -1px;
+    background-color: orange;
+    border: 2px solid black;
+}
+
+
+/* header section with the logo and nav bar ends over here*/
+
+
+/*hero image section*/
+
+#heroImg1 {
+    margin-top: 0px;
+    padding-bottom: 250px;
+    display: flex;
+    width: 1510px;
+    flex-direction: row;
+    background-color: purple;
+    justify-content: center;
+    border: 6px solid black;
+}
+
+#welcomeText {
+    margin-top: -130px;
+    padding-bottom: 300px;
+    margin-left: 300px;
+    display: flex;
+    width: 800px;
+    flex-direction: row;
+    background-color: aqua;
+    justify-content: center;
+    border: 5px solid black;
+}
+
+#promovid {
+    margin-top: 90px;
+    padding-bottom: 300px;
+    margin-left: 340px;
+    display: flex;
+    width: 700px;
+    flex-direction: row;
+    background-color: rgb(0, 47, 255);
+    justify-content: center;
+    border: 5px solid black;
+}
+
+#promotext {
+    margin-top: -60px;
+    padding-bottom: 150px;
+    margin-left: 260px;
+    display: flex;
+    width: 860px;
+    flex-direction: row;
+    background-color: rgb(184, 197, 252);
+    justify-content: center;
+    border: 5px solid black;
+}
+
+
+/* below the main body, sub body / or product content */
+
+#productImg {
+    display: flex;
+    flex-direction: row;
+    justify-items: self-end;
+    background-color: lightgray;
+    padding-bottom: 20px;
+    border: 2px solid #333;
+}
+
+#productImg22 {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+    padding-bottom: 20px;
+    border: 2px solid #333;
+}
+
+#productImg1 {
+    margin-top: 10px;
+    padding-bottom: 140px;
+    margin-left: 10px;
+    width: 600px;
+    flex-direction: column;
+    background-color: rgb(184, 197, 252);
+    border: 5px solid black;
+}
+
+#productImg2 {
+    margin-top: 10px;
+    padding-bottom: 140px;
+    margin-left: 680px;
+    width: 600px;
+    background-color: rgb(184, 197, 252);
+    justify-content: center;
+    border: 5px solid black;
+}
+
+#productImg3 {
+    margin-top: 10px;
+    padding-bottom: 140px;
+    margin-left: 10px;
+    width: 600px;
+    background-color: rgb(184, 197, 252);
+    justify-content: center;
+    border: 5px solid black;
+}
+
+#productImg4 {
+    margin-top: 10px;
+    padding-bottom: 40px;
+    margin-left: 680px;
+    width: 600px;
+    background-color: rgb(184, 197, 252);
+    justify-content: center;
+    border: 5px solid black;
+}
+
+
+/* end of the four product display*/
+
+
+/* Order Id Form*/
+
+
+/* currently just adding box as of now, will change it futher*/
+
+#orderForm
+/* heading*/
+
+{
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+    padding-bottom: 00px;
+    border: 2px solid #333;
+    justify-content: center;
+}
+
+#buyOurProduct {
+    margin-top: 110px;
+    padding-bottom: 340px;
+    width: 950px;
+    background-color: rgb(184, 197, 252);
+    justify-content: center;
+    border: 5px solid black;
+}
+
+#orderForm2 {
+    display: none;
+}
+
+
+/* page1 css starts here */
+
+pre{
+    color: black;
+    line-height: 100px;
+    font-size: 40px;
+    text-align: center;
+    margin: 1px;
+    margin-top: 100px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.productInfo{
+    display: flex;
+    background-color: rosybrown ;
+    flex-wrap: wrap;
+}
+
+.productInfo > div{
+  background-color: lightgray;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+#productInfo1{
+    width: 80%;
+    height: 200px;
+    margin: 30px;
+    margin-left: 10%;
+    border: 2px solid #333;
+}
+
+#photo1{
+    width: 20%;
+    height: 250px;
+    padding-bottom: 20px;
+    margin-left: 50px;
+    border: 2px solid #333;
+}
+
+#productInfo2{
+    width: 72%;
+    height: 200px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    border: 2px solid #333;
+}
+
+#photo2{
+    width: 20%;
+    height: 250px;
+    padding-bottom: 20px;
+    border: 2px solid #333;
+}
+
+#productInfo3{
+    justify-items: center;
+    width: 72%;
+    height: 200px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-left: 50px;
+    border: 2px solid #333;
+}
+
+#photo3{
+    width: 20%;
+    height: 250px;
+    padding-bottom: 20px;
+    margin-left: 50px;
+    border: 2px solid #333;
+}
+
+#productInfo4{
+    width: 72%;
+    height: 200px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    border: 2px solid #333;
+}
+
+#photo4{
+    width: 20%;
+    height: 250px;
+    padding-bottom: 20px;
+    margin-left: 50px;
+    border: 2px solid #333;
+}
+
+#photo5{
+    width: 20%;
+    height: 250px;
+    padding-bottom: 20px;
+    margin-left: 800px;
+    border: 2px solid #333;
+}
+
+#productInfo5{
+    width: 80%;
+    height: 250px;
+    margin: 30px;
+    margin-left: 10%;
+    border: 2px solid #333;
+}
+
+#photo6{
+    width: 20%;
+    height: 250px;
+    padding-bottom: 20px;
+    margin-left: 50px;
+    border: 2px solid #333;
+}
+
+#photo7{ 
+    width: 20%;
+    height: 250px;
+    padding-bottom: 20px;
+    margin-left: 800px;
+    border: 2px solid #333;
+}
+
+
+/* page1 css ends here */
+
+
+/* page2 starts here */
+
+.shopInformation{
+    display: flex;
+    background-color: rosybrown ;
+    flex-wrap: wrap;
+}
+
+.shopInformation > div {
+  background-color: lightgray;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+#shopInfo{
+    width: 80%;
+    height: 200px;
+    margin: 30px;
+    margin-left: 10%;
+    border: 2px solid #333;
+}
+
+#beer{
+    width: 25%;
+    height: 250px;
+    padding-bottom: 20px;
+    margin-left: 50px;
+    border: 2px solid #333;
+}
+
+#beerInfo{
+    width: 65%;
+    height: 200px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    border: 2px solid #333;
+}
+
+#quantity{
+    width: 45%;
+    height: 100px;
+    padding-bottom: 20px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    border: 2px solid #333;
+}
+
+#addToCart{
+    width: 45%;
+    height: 100px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    border: 2px solid #333;
+}
+
+#proceedToCheckout{
+    width: 60%;
+    height: 100px;
+    padding-bottom: 20px;
+    margin-left: 20%;
+    border: 2px solid #333;
+}
+
+
+/* page2 ends here */
+
+/* page3 starts here */
+
+.subscriptionInformation{
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subscriptionInformation > div {
+  background-color: lightgray;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  width: 80%;
+  height: 200px;
+  margin: 30px;
+  padding-top: 70px;
+  margin-left: 10%;
+  border: 2px solid #333;
+}
+
+.subscriptionForm{
+    display: flex;
+    background-color: grey;
+    flex-wrap: wrap;
+}
+
+
+.subscriptionForm > div  {
+  background-color: lightgray;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+#Name{
+    width: 40%;
+    height: 100px;
+    padding-bottom: 20px;
+    margin: 20px 70px;
+    border: 2px solid #333;
+}
+
+#email{
+    width: 90%;
+    height: 100px;
+    padding-bottom: 20px;
+    margin: 20px 70px;
+    border: 2px solid #333;
+}
+
+#phoneNumber{
+    width: 90%;
+    height: 100px;
+    padding-bottom: 20px;
+    margin: 20px 70px;
+    border: 2px solid #333;
+}
+
+#checkbox{
+    width: 8%;
+    height: 100px;
+    padding-bottom: 20px;
+    margin: 20px 100px;
+    background-color: white;
+    border: 2px solid #333;
+}
+
+#prompt{
+    width: 70%;
+    height: 100px;
+    padding-bottom: 20px;
+    margin: 10px 50px;
+    border: 2px solid #333;
+}
+
+/* page3 ends here */
+
+/* page4 starts here */
+
+.supportTeam{
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.supportTeam > div {
+  background-color: lightgray;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  width: 80%;
+  height: 200px;
+  margin: 30px;
+  padding-top: 70px;
+  margin-left: 10%;
+  border: 2px solid #333;
+}
+
+#person{
+    width: 25%;
+    height: 250px;
+    padding-top: 8%;
+    border: 2px solid #333;
+    border-radius: 50%;
+}
+
+#personInfo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 300px;
+    padding-bottom: 20px;
+    padding: 30px;
+    border: none;
+    background-color: gray;
+}
+
+#personName{
+    width: 70%; 
+    height: 10px;
+    border: 2px solid #333;
+    background-color: lightgray;
+    padding-bottom: 100px;
+    margin-bottom: 10px;
+}
+
+#personEmail{
+    flex: 50%;
+    height: 10px;
+    width: 60%;
+    border: 2px solid #333;
+    background-color: lightgray;
+    padding-bottom: 100px;
+    margin-bottom: 10px;
+}
+
+/* page4 ends here */
+
+
+/*FOOTER SECTION FOR PAGE-1*/
+
+#mainFooter {
+    display: flex;
+    background-color: lightgray;
+    flex-direction: column;
+    border: 2px solid #333;
+}
+
+#emailList {
+    background-color: cornflowerblue;
+    justify-content: center;
+    padding: 0px;
+    width: 430px;
+    margin-left: 560px;
+    border: 2px solid #333;
+}
+
+#contactInformation {
+    background-color: cornflowerblue;
+    justify-content: center;
+    padding: 0px;
+    width: 430px;
+    margin-left: 560px;
+    border: 2px solid #333;
+}
+
+#copyright {
+    background-color: cornflowerblue;
+    justify-content: center;
+    padding: 0px;
+    width: 430px;
+    margin-left: 560px;
+    border: 2px solid #333;
+}
+
+
+/* Animations */
+
+.element {
+    width: 100%;
+    height: 100%;
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #001F3F;
+    }
+    100% {
+        background-color: #FF4136;
+    }
+}
