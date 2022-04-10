@@ -15,6 +15,7 @@ p {
 body {
     border-top: 3px solid #333;
     margin: 0px;
+    /*    width:100%;*/
 }
 
 .hidden {
@@ -27,7 +28,7 @@ body {
 #siteContainer {
     margin: 0 auto;
     /* center container */
-    width: 1520px;
+    /*    width: 1520px;*/
 }
 
 #mainHeader {
@@ -38,7 +39,8 @@ body {
     display: flex;
     flex-direction: row;
     background-color: #333;
-    border: 1px solid red;
+    border: 5px solid black;
+    border-bottom: 0px;
 }
 
 #logo {
@@ -47,17 +49,15 @@ body {
     margin-left: -1px;
     margin-top: -1px;
     background-color: yellow;
-    border: 3px solid black;
 }
 
 #mainNav {
     display: flex;
-    flex-direction: column;
-    width: 1300px;
+    width: 100%;
     padding-bottom: 109px;
     margin-left: -1px;
     margin-top: -1px;
-    background-color: orange;
+    background-color: #e44b25;
     border: 2px solid black;
 }
 
@@ -69,49 +69,62 @@ body {
 
 #heroImg1 {
     margin-top: 0px;
-    padding-bottom: 250px;
     display: flex;
-    width: 1510px;
     flex-direction: row;
-    background-color: purple;
-    justify-content: center;
-    border: 6px solid black;
-}
-
-#welcomeText {
-    margin-top: -130px;
-    padding-bottom: 300px;
-    margin-left: 300px;
-    display: flex;
-    width: 800px;
-    flex-direction: row;
-    background-color: aqua;
     justify-content: center;
     border: 5px solid black;
 }
 
+#welcomeText {
+    margin-top: -130px;
+    margin-left: 17%;
+    display: flex;
+    width: 66%;
+    flex-direction: row;
+    background-color: #878787;
+    justify-content: center;
+    border: 5px solid black;
+    z-index: 999999999;
+    padding: 20px;
+    position: relative;
+}
+
+#welcomeText p {
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: x-large;
+    line-height: 1.8;
+}
+
+#promo {
+    /*    background: rgb(216 220 209);
+    border-radius: 32% 126% 2% 15% / 70% 50% 30% 25%;*/
+}
+
 #promovid {
     margin-top: 90px;
-    padding-bottom: 300px;
-    margin-left: 340px;
+    margin-left: 17%;
     display: flex;
-    width: 700px;
+    width: 69%;
     flex-direction: row;
-    background-color: rgb(0, 47, 255);
     justify-content: center;
     border: 5px solid black;
 }
 
 #promotext {
-    margin-top: -60px;
-    padding-bottom: 150px;
-    margin-left: 260px;
     display: flex;
-    width: 860px;
     flex-direction: row;
-    background-color: rgb(184, 197, 252);
+    /*background-color: rgb(217 101 73);*/
     justify-content: center;
-    border: 5px solid black;
+    /*  border: 5px solid black;*/
+    padding: 20px;
+}
+
+#promotext p {
+    font-size: x-large;
+    padding: 0% 12% 0% 15%;
+    line-height: 1.8;
 }
 
 
@@ -121,57 +134,70 @@ body {
     display: flex;
     flex-direction: row;
     justify-items: self-end;
-    background-color: lightgray;
+    background-color: black;
     padding-bottom: 20px;
-    border: 2px solid #333;
+    border-top: 2px solid #333;
 }
 
 #productImg22 {
     display: flex;
     flex-direction: row;
-    background-color: lightgray;
+    background-color: black;
     padding-bottom: 20px;
-    border: 2px solid #333;
+    border-bottom: 2px solid #333;
 }
 
 #productImg1 {
     margin-top: 10px;
-    padding-bottom: 140px;
     margin-left: 10px;
-    width: 600px;
     flex-direction: column;
-    background-color: rgb(184, 197, 252);
     border: 5px solid black;
+    height: 500px;
+    width: 30%;
+    margin: 10%;
 }
 
 #productImg2 {
     margin-top: 10px;
-    padding-bottom: 140px;
     margin-left: 680px;
-    width: 600px;
-    background-color: rgb(184, 197, 252);
+    height: 500px;
+    width: 30%;
     justify-content: center;
     border: 5px solid black;
+    margin: 10%;
 }
 
 #productImg3 {
     margin-top: 10px;
-    padding-bottom: 140px;
     margin-left: 10px;
-    width: 600px;
-    background-color: rgb(184, 197, 252);
+    height: 500px;
+    width: 30%;
     justify-content: center;
     border: 5px solid black;
+    margin: 10%;
+    margin-top: 0%;
 }
 
 #productImg4 {
     margin-top: 10px;
-    padding-bottom: 40px;
     margin-left: 680px;
-    width: 600px;
-    background-color: rgb(184, 197, 252);
+    height: 500px;
+    width: 30%;
     justify-content: center;
     border: 5px solid black;
+    margin: 10%;
+    margin-top: 0%;
+}
+
+.productImg {
+    width: 100%;
+    height: 100%;
+}
+
+.productImg:hover {
+    opacity: 0.18;
+    filter: blur(5px) saturate(60%);
+    transform: scale(0.8) translate3d(5px, 0px, 0px);
 }
 
 
@@ -183,35 +209,42 @@ body {
 
 /* currently just adding box as of now, will change it futher*/
 
-#orderForm
-/* heading*/
-
-{
-    display: flex;
-    flex-direction: row;
-    background-color: lightgray;
+#orderForm {
     padding-bottom: 00px;
     border: 2px solid #333;
     justify-content: center;
 }
 
 #buyOurProduct {
-    margin-top: 110px;
-    padding-bottom: 340px;
-    width: 950px;
-    background-color: rgb(184, 197, 252);
-    justify-content: center;
-    border: 5px solid black;
+    width: 100%;
+    background: #e44b25;
 }
 
-#orderForm2 {
-    display: none;
+#buyOurProduct p {
+    color: white;
+}
+
+#buyOurProduct2 p {
+    color: white;
+}
+
+#buyOurProduct2 {
+    width: 100%;
+}
+
+#ProductorderForm {
+    text-align-last: center;
+    color: white;
+    background-image: linear-gradient(black, navy, blue, indigo);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    line-height: 3.5;
 }
 
 
 /* page1 css starts here */
 
-pre{
+pre {
     color: black;
     line-height: 100px;
     font-size: 40px;
@@ -222,115 +255,90 @@ pre{
     font-family: 'Times New Roman', Times, serif;
 }
 
-.productInfo{
+.productInfo {
     display: flex;
-    background-color: rosybrown ;
     flex-wrap: wrap;
+    padding-bottom: 25px;
 }
 
-.productInfo > div{
-  background-color: lightgray;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+.productInfo>div {
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
 }
 
-#productInfo1{
+#productInfo1,
+#productInfo5 {
     width: 80%;
     height: 200px;
     margin: 30px;
     margin-left: 10%;
-    border: 2px solid #333;
 }
 
-#photo1{
-    width: 20%;
-    height: 250px;
-    padding-bottom: 20px;
-    margin-left: 50px;
-    border: 2px solid #333;
+#productInfo1 p,
+#productInfo5 p {
+    font-size: x-large;
+    padding: 0% 12% 0% 15%;
+    line-height: 1.8;
 }
 
-#productInfo2{
-    width: 72%;
-    height: 200px;
-    padding-bottom: 20px;
-    margin-top: 40px;
-    border: 2px solid #333;
+.productInfo #photo1,
+.productInfo #photo2,
+.productInfo #photo3 {
+    width: 35%;
+    border: 5px solid black;
+    margin-left: 5%;
 }
 
-#photo2{
-    width: 20%;
-    height: 250px;
-    padding-bottom: 20px;
-    border: 2px solid #333;
+.productInfo #photo1 img,
+.productInfo #photo2 img,
+.productInfo #photo3 img,
+.productInfo #photo4 img,
+.productInfo #photo5 img,
+.productInfo #photo6 img,
+.productInfo #photo7 img {
+    width: 100%;
+    height: 100%;
 }
 
-#productInfo3{
-    justify-items: center;
-    width: 72%;
-    height: 200px;
-    padding-bottom: 20px;
-    margin-top: 40px;
-    margin-left: 50px;
-    border: 2px solid #333;
+.productInfo #photo1 img:hover,
+.productInfo #photo2 img:hover,
+.productInfo #photo3 img:hover,
+.productInfo #photo4 img:hover,
+.productInfo #photo5 img:hover,
+.productInfo #photo6 img:hover,
+.productInfo #photo7 img:hover {
+    filter: drop-shadow(16px 16px 20px red) invert(10%);
 }
 
-#photo3{
-    width: 20%;
-    height: 250px;
-    padding-bottom: 20px;
-    margin-left: 50px;
-    border: 2px solid #333;
+#productInfo2,
+#productInfo3,
+#productInfo4 {
+    width: 55%;
 }
 
-#productInfo4{
-    width: 72%;
-    height: 200px;
-    padding-bottom: 20px;
-    margin-top: 40px;
-    border: 2px solid #333;
+#productInfo2 p,
+#productInfo3 p,
+#productInfo4 p {
+    font-size: x-large;
+    line-height: 1.8;
+    padding: 15% 5%;
 }
 
-#photo4{
-    width: 20%;
-    height: 250px;
-    padding-bottom: 20px;
-    margin-left: 50px;
-    border: 2px solid #333;
+.productInfo #photo4,
+.productInfo #photo5,
+.productInfo #photo6,
+.productInfo #photo7 {
+    width: 35%;
+    border: 5px solid black;
+    margin-left: 5%;
+    max-height: 450px;
 }
 
-#photo5{
-    width: 20%;
-    height: 250px;
-    padding-bottom: 20px;
-    margin-left: 800px;
-    border: 2px solid #333;
-}
-
-#productInfo5{
-    width: 80%;
-    height: 250px;
-    margin: 30px;
-    margin-left: 10%;
-    border: 2px solid #333;
-}
-
-#photo6{
-    width: 20%;
-    height: 250px;
-    padding-bottom: 20px;
-    margin-left: 50px;
-    border: 2px solid #333;
-}
-
-#photo7{ 
-    width: 20%;
-    height: 250px;
-    padding-bottom: 20px;
-    margin-left: 800px;
-    border: 2px solid #333;
+.productInfo #photo5,
+.productInfo #photo7 {
+    margin-left: 15%;
 }
 
 
@@ -339,20 +347,32 @@ pre{
 
 /* page2 starts here */
 
-.shopInformation{
+.shopInformation {
     display: flex;
-    background-color: rosybrown ;
     flex-wrap: wrap;
 }
 
-.shopInformation > div {
-  background-color: lightgray;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+.shopInformation>div {
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    padding-bottom: 20px;
 }
 
+#shopInfo {
+    width: 80%;
+    margin: 66px;
+    margin-left: 10%;
+}
+
+#shopInfo p {
+    font-size: x-large;
+    padding: 0% 12% 0% 15%;
+    line-height: 1.8;
+}
+
+
+/*
 #shopInfo{
     width: 80%;
     height: 200px;
@@ -360,62 +380,112 @@ pre{
     margin-left: 10%;
     border: 2px solid #333;
 }
+*/
 
-#beer{
-    width: 25%;
-    height: 250px;
-    padding-bottom: 20px;
-    margin-left: 50px;
-    border: 2px solid #333;
+.beer_img {
+    width: 35%;
+    height: 450px;
+    margin-left: 5%;
 }
 
-#beerInfo{
-    width: 65%;
-    height: 200px;
-    padding-bottom: 20px;
-    margin-top: 40px;
-    border: 2px solid #333;
+.beer_img img {
+    width: 100%;
+    height: 100%;
 }
 
-#quantity{
-    width: 45%;
-    height: 100px;
-    padding-bottom: 20px;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    border: 2px solid #333;
+.beerInfo {
+    width: 55%;
 }
 
-#addToCart{
-    width: 45%;
-    height: 100px;
-    padding-bottom: 20px;
+.beerInfo h3 {
+    text-decoration: underline;
+}
+
+.beerInfo p {
+    font-size: x-large;
+    line-height: 1.8;
+    /*    padding: 15% 5%;*/
+}
+
+.second_row {
+    width: 100%;
+    display: flex;
+    padding-left: 16%;
+}
+
+.second_row input[type="number"] {
+    margin: 5px;
+    text-align: center;
+}
+
+.quantity {
+    width: 28%;
+    height: 50px;
+    /* padding-bottom: 20px; */
+    /* margin-left: 50px; */
+    /* margin-bottom: 50px; */
+    border: 2px solid #333;
+    display: flex;
+    background: #e1b71d;
+    color: white;
+}
+
+.quantity p {
+    line-height: 1.2;
     margin-left: 10px;
-    margin-bottom: 50px;
-    border: 2px solid #333;
+    color: white;
 }
 
-#proceedToCheckout{
-    width: 60%;
-    height: 100px;
-    padding-bottom: 20px;
-    margin-left: 20%;
+.addToCart {
+    width: 28%;
+    height: 50px;
+    /* padding-bottom: 20px; */
+    margin-left: 50px;
+    /* margin-bottom: 50px; */
     border: 2px solid #333;
+    display: flex;
+    color: white;
+    background: #578137;
+}
+
+.addToCart button {
+    width: 100%;
+    background: green;
+    color: white;
+    font-size: larger;
+}
+
+.addToCart p {
+    line-height: 1.2;
+    margin-left: 10px;
+    color: white;
+}
+
+#proceedToCheckout {
+    width: 100%;
+}
+
+#proceedToCheckout button {
+    width: 50%;
+    background: #0f0f95;
+    color: white;
+    font-size: larger;
+    padding: 5px;
 }
 
 
 /* page2 ends here */
 
+
 /* page3 starts here */
 
-.subscriptionInformation{
-    background-color: grey;
+.subscriptionInformation {
     display: flex;
     flex-wrap: wrap;
 }
 
-.subscriptionInformation > div {
-  background-color: lightgray;
+
+/*.subscriptionInformation > div {
   text-align: center;
   line-height: 75px;
   font-size: 30px;
@@ -425,48 +495,65 @@ pre{
   padding-top: 70px;
   margin-left: 10%;
   border: 2px solid #333;
+}*/
+
+.subscriptionInformation {
+    width: 80%;
+    margin: 66px;
+    margin-left: 10%;
 }
 
-.subscriptionForm{
+.subscriptionInformation p {
+    font-size: x-large;
+    padding: 0% 12% 0% 15%;
+    line-height: 1.8;
+}
+
+.subscriptionForm {
     display: flex;
-    background-color: grey;
     flex-wrap: wrap;
+    text-align-last: center;
+    color: white;
+    background-image: linear-gradient(black, navy, blue, indigo);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    line-height: 3.5;
 }
 
-
-.subscriptionForm > div  {
-  background-color: lightgray;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+.subscriptionForm>div {
+    margin: 24px 80px;
+    text-align: center;
+    line-height: 68px;
 }
 
-#Name{
+.Name {
     width: 40%;
-    height: 100px;
-    padding-bottom: 20px;
-    margin: 20px 70px;
-    border: 2px solid #333;
 }
 
-#email{
-    width: 90%;
-    height: 100px;
-    padding-bottom: 20px;
-    margin: 20px 70px;
-    border: 2px solid #333;
+.Name #fname,
+.Name #lname,
+#SubscribeEmail #email,
+#phoneNumber #phone {
+    height: 100%;
+    width: 100%;
 }
 
-#phoneNumber{
-    width: 90%;
-    height: 100px;
-    padding-bottom: 20px;
-    margin: 20px 70px;
-    border: 2px solid #333;
+#SubscribeEmail {
+    width: 80%;
+    margin: 20px 160px;
 }
 
-#checkbox{
+#phoneNumber {
+    width: 80%;
+    margin: 20px 160px;
+}
+
+#checkbox_list {
+    width: 50%;
+    margin-left: 40%;
+}
+
+#checkbox {
     width: 8%;
     height: 100px;
     padding-bottom: 20px;
@@ -475,74 +562,87 @@ pre{
     border: 2px solid #333;
 }
 
-#prompt{
-    width: 70%;
-    height: 100px;
-    padding-bottom: 20px;
-    margin: 10px 50px;
-    border: 2px solid #333;
+.prompt {
+    display: flex;
 }
+
+.prompt [type="checkbox"] {
+    margin-top: 5%;
+}
+
+.prompt p {
+    padding-left: 20px;
+}
+
 
 /* page3 ends here */
 
+
 /* page4 starts here */
 
-.supportTeam{
-    background-color: grey;
+.supportTeam {
     display: flex;
     flex-wrap: wrap;
 }
 
-.supportTeam > div {
-  background-color: lightgray;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-  width: 80%;
-  height: 200px;
-  margin: 30px;
-  padding-top: 70px;
-  margin-left: 10%;
-  border: 2px solid #333;
+.supportTeam>div {
+    line-height: 75px;
+    font-size: 30px;
+    margin: 30px;
 }
 
-#person{
+#supportTeamInfo {
+    width: 80%;
+    margin: 66px;
+    margin-left: 10%;
+}
+
+#supportTeamInfo p {
+    font-size: x-large;
+    padding: 0% 12% 0% 15%;
+    line-height: 1.8;
+}
+
+.person {
     width: 25%;
-    height: 250px;
-    padding-top: 8%;
+    height: 480px;
+    /* border: 2px solid #333; */
+    border-radius: 76%;
+    padding-left: 15%;
+}
+
+.person img {
+    width: 100%;
+    height: 100%;
     border: 2px solid #333;
     border-radius: 50%;
 }
 
-#personInfo{
+.personInfo {
     display: flex;
     flex-wrap: wrap;
     width: 40%;
     height: 300px;
     padding-bottom: 20px;
-    padding: 30px;
+    padding: 85px 0px;
     border: none;
-    background-color: gray;
 }
 
-#personName{
-    width: 70%; 
+.personName {
+    width: 70%;
     height: 10px;
-    border: 2px solid #333;
-    background-color: lightgray;
     padding-bottom: 100px;
     margin-bottom: 10px;
 }
 
-#personEmail{
+.personEmail {
     flex: 50%;
     height: 10px;
     width: 60%;
-    border: 2px solid #333;
-    background-color: lightgray;
     padding-bottom: 100px;
     margin-bottom: 10px;
 }
+
 
 /* page4 ends here */
 
@@ -550,37 +650,24 @@ pre{
 /*FOOTER SECTION FOR PAGE-1*/
 
 #mainFooter {
+    background-color: #e44b25;
+    padding: 2%;
+}
+
+#mainFooter p {
+    color: white;
+    font-size: medium;
+    line-height: 1.8;
+}
+
+.mainFooterContent {
     display: flex;
-    background-color: lightgray;
-    flex-direction: column;
-    border: 2px solid #333;
+    flex-direction: row;
 }
 
-#emailList {
-    background-color: cornflowerblue;
-    justify-content: center;
-    padding: 0px;
-    width: 430px;
-    margin-left: 560px;
-    border: 2px solid #333;
-}
-
-#contactInformation {
-    background-color: cornflowerblue;
-    justify-content: center;
-    padding: 0px;
-    width: 430px;
-    margin-left: 560px;
-    border: 2px solid #333;
-}
-
-#copyright {
-    background-color: cornflowerblue;
-    justify-content: center;
-    padding: 0px;
-    width: 430px;
-    margin-left: 560px;
-    border: 2px solid #333;
+#supportinfo,
+#socialmedia {
+    width: 50%;
 }
 
 
@@ -589,7 +676,7 @@ pre{
 .element {
     width: 100%;
     height: 100%;
-    animation: pulse 5s infinite;
+    /*    animation: pulse 5s infinite;*/
 }
 
 @keyframes pulse {
@@ -599,4 +686,102 @@ pre{
     100% {
         background-color: #FF4136;
     }
+}
+
+
+/* Navigation bar */
+
+.my_website_menu {
+    display: inline;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.my_website_menu a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.my_website_menu a:hover {
+    color: black;
+}
+
+.my_webiste_logo {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+
+/* Hero Image */
+
+.hero_banner_imgs_bandsteel {
+    width: 100%;
+    height: 100%;
+}
+
+select#patch_select,
+select#patch_qty_select {
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+button.myCustombtn {
+    height: 35px;
+    background: #27ad27;
+    color: white;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+
+button.myCustombtnsubmit {
+    height: 35px;
+    background: #27ad27;
+    color: white;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    font-weight: bold;
+    word-spacing: 2px;
+    margin-top: 10px;
+}
+
+.myCustomIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon-row img {
+    padding: 5px;
+    background: white;
+}
+
+.my_cookie_a_policy {
+    text-align: center;
+    color: #515252;
+    z-index: 99999999999999999999;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0 !important;
+    display: block;
+    background: #f8f8f8;
+    border-top: 1px solid #d3d4d6;
+}
+
+a.cookie-bg-btn {
+    border-radius: 0px;
+    font-weight: 900;
+    color: #fff;
+    background: #3c3838;
+    letter-spacing: 2px;
 }
